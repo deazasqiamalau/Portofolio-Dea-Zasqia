@@ -307,37 +307,46 @@ section:hover {
     background: linear-gradient(90deg, #ee6983, #850e35);
     transform: scale(1.07);
 }
-/* ---Follow Me----*/
+
+
+/* FOLLOW */
+#follow {
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+#follow h2 {
+    font-family: 'Arial', sans-serif;
+    color: #850e35;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#follow p {
+    font-size: 1.2em;
+    color: #850e35;
+    margin-bottom: 20px;
+}
 .social-links {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
 .social-links a {
-    font-size: 1.8rem;
-    color: #850e35;
-    transition: all 0.3s ease-in-out;
-    animation: fadeIn 1.5s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, color 0.3s;
+    font-size: 2em;
 }
-
 .social-links a:hover {
-    color: #ee6983;
     transform: scale(1.2);
 }
-
-/* ---- 5. Footer ---- */
-footer {
-    background: #ffc4c4;
-    color: #850e35;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-    animation: slideUp 1s ease-in-out;
-}
+.social-links a:nth-child(1):hover { color: #E1306C; }
+.social-links a:nth-child(2):hover { color: #FF0000; }
+.social-links a:nth-child(3):hover { color: #0077B5; }
+.social-links a:nth-child(4):hover { color: #333; }
 
 /* ---- 7. Tombol ---- */
 button {
